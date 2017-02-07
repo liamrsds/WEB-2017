@@ -1,0 +1,213 @@
+/*******************************************************
+************************MAIN**************************
+*******************************************************/
+body {
+	background-image: url(../img/fondo.png); 
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.wrapper {
+	/*border:1px red solid;*/
+	width: 100%;
+}
+ /**********************HEADER*************************/
+header {
+	/*border:1px red solid;*/
+	width: 24%;
+	margin: 20px;
+	margin-top: 70px;
+	margin-right: 60px;
+	float: right;
+}
+
+	header h1 {
+		font-family: 'Playfair Display';
+		font-size: 4em;
+		text-align: right;
+		margin-top: 90px;
+		margin-bottom: 20px;
+		color: #312c2b;
+	}
+	
+	header p {
+		font-family: 'Raleway';
+		font-weight: 200;
+		text-align: right;
+		color: #312c2b;
+		font-size: 1.2em;
+		padding-left: 40px;
+	}
+ /**********************FOTOS*************************/
+section {
+	/*border:1px red solid;*/
+	width: 70%;
+	margin-top: 50px;
+	padding-left: 50px;
+	padding-bottom: 100px;
+}
+
+div {
+	/*border:1px red solid;*/
+	width: 240px;
+	height: 240px;
+	float: left;
+}
+
+#umo, #neon, #shamir, #luito, #diego, #america {
+	margin: 20px;
+	border: 18px white solid;
+}
+
+.color {
+	background-color: #ffffff;
+	opacity: 0;
+
+		animation-timing-function: ease-in;
+		-moz-transition: opacity  0.6s;
+	    -webkit-transition: opacity  0.6s;
+	    -ms-transition: opacity  0.6s;
+	   	-o-transition: opacity 0.6s;
+}
+
+	.color:hover {
+		opacity: 0.9;
+	}
+/**********************LINKS*************************/
+	.concierto div h2 {
+		text-align: center;
+			/*padding-top: 36%;*/
+			line-height: 240px;
+	}
+		.concierto div a {
+			text-decoration: none;
+			font-family: 'Playfair Display';
+			font-weight: lighter;
+			color: #312c2b;
+			font-size: 2em;
+			vertical-align: middle;
+			line-height: normal;
+			display: inline-block;
+		}
+
+
+
+/**********************FOTOS INDIVIDUALES*************************/
+#umo {
+	background-image: url(../img/umo.png);
+	background-size: cover;
+}
+
+#shamir {
+	background-image: url(../img/shamir.png);
+	background-size: cover;
+}
+
+#neon {
+	background-image: url(../img/neon.png);
+	background-size: cover;
+}
+
+#luito {
+	background-image: url(../img/luito.png);
+	background-size: cover;
+}
+
+#diego {
+	background-image: url(../img/diego.png);
+	background-size: cover;
+}
+
+#america {
+	background-image: url(../img/america.png);
+	background-size: cover;
+}
+
+/****************************FOOTER****************************/
+footer {
+	clear: both;
+	width: 100%;
+	background-color: #ffffff;
+	vertical-align: bottom;
+	height: 30px;
+	bottom: 0;
+	position: absolute;
+}
+
+	footer p {
+		padding: 10px;
+		font-family: 'Raleway';
+		font-weight: 100;
+		font-size: 0.8em;
+		text-align: center;
+		color: #b0c8cf;
+	}
+
+/****************************RESPONSIVE****************************/
+@media screen and (max-width:798px) {
+
+	body {
+		background-image: url(../img/fondo2.png);
+	}
+/****************************HEADER****************************/
+	header {
+		width: 100%;
+		margin: auto;
+	}
+
+		header h1 {
+			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 0px;
+		}
+
+		header p {
+			text-align: center;
+			padding: 30px;
+		}
+
+ /**********************FOTOS*************************/
+	section {
+		width: 100%;
+		padding-left: 10px;
+		padding-bottom: 50px;
+	}
+
+	section div {
+		width: 150px;
+		height: 150px;
+	}
+
+	 #umo, #neon, #shamir, #luito, #diego, #america {
+		border: 10px white solid;
+		margin: 10px;
+	 }
+
+ /**********************LINKS*************************/
+	 .concierto div h2 {
+		text-align: center;
+		/*padding-top: 36%;*/
+		line-height: 150px;
+	}
+		.concierto div a {
+			text-decoration: none;
+			font-family: 'Playfair Display';
+			font-weight: lighter;
+			color: #312c2b;
+			font-size: 1.4em;
+			vertical-align: middle;
+			line-height: normal;
+			display: inline-block;
+		}
+
+/**********************FOOTER*************************/
+	footer {
+		clear: both;
+		width: 100%;
+		background-color: #ffffff;
+		height: 30px;
+		bottom: 0;
+		position: fixed;
+	}
+}
