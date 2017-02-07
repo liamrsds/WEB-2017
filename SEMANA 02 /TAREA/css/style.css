@@ -1,0 +1,259 @@
+/***************************GENERAL***************************/
+body {
+	background-color: #000000;
+
+	-webkit-animation: fadein 1s; 
+       -moz-animation: fadein 1s; 
+        -ms-animation: fadein 1s; 
+         -o-animation: fadein 1s; 
+            animation: fadein 1s;
+				}
+
+				@keyframes fadein {
+				    from { opacity: 0; }
+				    to   { opacity: 1; }
+				}
+
+				@-moz-keyframes fadein {
+				    from { opacity: 0; }
+				    to   { opacity: 1; }
+				}
+
+				@-webkit-keyframes fadein {
+				    from { opacity: 0; }
+				    to   { opacity: 1; }
+				}
+
+				@-ms-keyframes fadein {
+				    from { opacity: 0; }
+				    to   { opacity: 1; }
+				}
+
+				@-o-keyframes fadein {
+				    from { opacity: 0; }
+				    to   { opacity: 1; }
+							
+				}
+
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+button {
+	padding: 20px;
+	width: 158.5px;
+	font-size: 1.1em;
+	border:none;
+	margin: -2px;
+	outline: none;
+
+	animation-timing-function: ease-in;
+	-moz-transition: color  0.3s;
+	-webkit-transition: color  0.3s;
+ 	-ms-transition: color  0.3s;
+	-o-transition: color 0.3s;
+}
+		button:hover {
+			color: #ffffff;
+
+		}
+
+	a {
+		font-family: 'Lato';
+		color: #000000;
+		text-decoration: none;
+	}
+
+
+.video iframe{
+	width: 1190px;
+	height: 675px;
+	margin: auto;
+	float: none;
+	margin-left: 8%;
+	display: inline-block;
+	/*border: 3px red solid;*/
+}
+
+.video a {
+	float: right;
+	color: #ffffff;
+	font-size: 4em;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	position: absolute;
+	bottom: 0;
+
+		animation-timing-function: ease-in;
+		-moz-transition: color  0.3s;
+	    -webkit-transition: color  0.3s;
+	    -ms-transition: color  0.3s;
+	   	-o-transition: color 0.3s;
+}
+
+	.video a:hover {
+		color: #ffa4b7;
+	}
+
+#home h1 {
+	font-family: 'Lato'; 
+	color: #ffffff;
+	font-weight: 100;
+	font-size: 2em;
+	text-align: center;
+	margin-top: 20%;
+}	
+/***************************DD1***************************/
+	
+	button#button1 {
+		background-color: #ff4242;
+	}
+
+	.dropdown1 {
+		display: none;
+	    position: absolute;
+	    background-color: #f9f9f9;
+	    min-width: 160.3px;
+	    margin: -2px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	}
+
+		.dropdown1 a {
+			color: black;
+		    padding: 12px 16px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: block;
+		    color: #000000;
+		    box-shadow: 0 0 0;
+
+		    animation-timing-function: ease-in;
+			-moz-transition: color  0.3s;
+		    -webkit-transition: color  0.3s;
+		    -ms-transition: color  0.3s;
+		   	-o-transition: color 0.3s;
+		}
+
+			.dropdown1 a:hover {
+				color: #ffffff;
+			}
+				
+
+				.dropdown:hover .dropdown1 {
+				    display: block;
+				}
+/***************************BOTONE ROJO***************************/
+#r1 {
+	background-color: #ff583d;
+}
+
+#r2 {
+	background-color: #ff663d;
+}
+
+#r3 {
+	background-color: #ff7d3d;
+}
+
+/***************************BOTONE MORADO***************************/
+#m1 {
+	background-color: #e42eff;
+}
+
+#m2 {
+	background-color: #ff2ef3;
+}
+
+#m3 {
+	background-color: #ff54b9;
+}
+
+/***************************BOTONE MORADO***************************/
+#h1 {
+	background-color: #dbfc00;
+}
+
+/***************************DD2***************************/
+
+button#button2 {
+	background-color: #ff4285;
+}			
+
+/***************************DD3***************************/	
+
+button#button3 {
+	background-color: #a015ce;
+}	
+
+/***************************DD4***************************/
+button#button4 {
+	background-color: #5a41f3;
+}
+
+/***************************DD5***************************/
+button#button5 {
+	background-color: #1db7ff;
+}
+
+/***************************DD6***************************/
+button#button6 {
+	background-color: #25f9d4;
+}
+
+/***************************DD7***************************/
+button#button7 {
+	background-color: #2cec4c;
+}
+
+/***************************DD8***************************/
+button#button8 {
+	background-color: #c4f432;
+}
+
+/***************************DD9***************************/
+button#button9 {
+	background-color: #ffde00;
+}
+
+/****************************RESPONSIVE****************************/
+@media screen and (max-width:798px) {
+
+	button {
+		width: 134px;
+	}
+
+	.dropdown1 {
+		display: none;
+	    position: absolute;
+	    min-width: 134px;
+	}
+	
+	.video iframe{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	float: none;
+	margin-top: 40%;
+	display: inline-block;
+	/*border: 3px red solid;*/
+	}
+
+	.video a {
+		float: none;
+		position: fixed;
+		margin-left: 40%;
+	}
+	
+	#home h1 {
+	font-family: 'Lato'; 
+	color: #ffffff;
+	font-weight: 100;
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 65%;
+}	
+
+}
