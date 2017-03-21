@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PRUEBA</title>
+
+	<style>
+		ul#countdown {
+  position: relative;
+  top: 100px;
+  transform: translateY(-50%);
+  width: 690px;
+  border: 1px solid red;
+  margin: 0 auto;
+  padding: 15px 0 20px 0;
+  overflow: hidden;
+  font-family: 'Gotham';
+  font-weight: bolder;
+}
+  
+  li {
+    margin: 0 -10px 0 0;
+    padding: 0;
+    display: inline-block;
+    width: 170px;
+    font-size: 3em;
+    font-size: 6vw;
+    text-align: center;
+    }
+
+    .label {
+      color: #adafb2;
+      font-size: 1em;
+      font-size: 1.5vw;
+      font-family: 'Gotham';
+      font-weight: lighter;
+      text-transform: uppercase;
+    }
+
+#days {
+  background: -webkit-linear-gradient(bottom left, #811f9a, #de5d38);
+			 	-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+}
+
+#hrs {
+  background: -webkit-linear-gradient(bottom left, #d05447, #ff7415, #bb8d43);
+			 	-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+}
+
+#min {
+  background: -webkit-linear-gradient(bottom left, #d38433, #22c5ab);
+			 	-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+}
+
+#sec {
+  background: -webkit-linear-gradient(bottom left, #3cbc99, #00d2c2);
+			 	-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+}
+	</style>
+</head>
+<body>
+	<ul id="countdown">
+  <li id="days">
+    <div class="number" id="days">00</div>
+    <div class="label" id="days">Days</div>
+  </li>
+  <li id="hours">
+    <div class="number" id="hrs">00</div>
+    <div class="label" id="hrs">Hours</div>
+  </li>
+  <li id="minutes">
+    <div class="number" id="min">00</div>
+    <div class="label" id="min">Minutes</div>
+  </li>
+  <li id="seconds">
+    <div class="number" id="sec">00</div>
+    <div class="label" id="sec">Seconds</div>
+  </li>
+</ul>
+<script type="text/javascript" src="js/jjquery-3.1.1.min.js"></script>
+<script>
+	/* --------------------------
+ * GLOBAL VARS
+ * -------------------------- */
+// The date you want to count down to
+var targetDate = new Date("2018/04/7 00:00:00");   
+
+// Other date related variables
+var days;
+var hrs;
+var min;
+var sec;
+
+/* --------------------------
+ * ON DOCUMENT LOAD
+ * -------------------------- */
+$(function() {
+   // Calculate time until launch date
+   timeToLaunch();
+  // Transition the current countdown from 0 
+  numberTransition('#days .number', days, 1000, 'easeOutQuad');
+  numberTransition('#hours .number', hrs, 1000, 'easeOutQuad');
+  numberTransition('#minutes .number', min, 1000, 'easeOutQuad');
+  numberTransition('#seconds .number', sec, 1000, 'easeOutQuad');
+  // Begin Countdown
+  setTimeout(countDownTimer,1001);
+});
+
+/* --------------------------
+ * FIGURE OUT THE AMOUNT OF 
+   TIME LEFT BEFORE LAUNCH
+ * -------------------------- */
+function timeToLaunch(){
+    // Get the current date
+    var currentDate = new Date();
+
+    // Find the difference between dates
+    var diff = (currentDate - targetDate)/1000;
+    var diff = Math.abs(Math.floor(diff));  
+
+    // Check number of days until target
+    days = Math.floor(diff/(24*60*60));
+    sec = diff - days * 24*60*60;
+
+    // Check number of hours until target
+    hrs = Math.floor(sec/(60*60));
+    sec = sec - hrs * 60*60;
+
+    // Check number of minutes until target
+    min = Math.floor(sec/(60));
+    sec = sec - min * 60;
+}
+
+/* --------------------------
+ * DISPLAY THE CURRENT 
+   COUNT TO LAUNCH
+ * -------------------------- */
+function countDownTimer(){ 
+    
+    // Figure out the time to launch
+    timeToLaunch();
+    
+    // Write to countdown component
+    $( "#days .number" ).text(days);
+    $( "#hours .number" ).text(hrs);
+    $( "#minutes .number" ).text(min);
+    $( "#seconds .number" ).text(sec);
+    
+    // Repeat the check every second
+    setTimeout(countDownTimer,1000);
+}
+
+/* --------------------------
+ * TRANSITION NUMBERS FROM 0
+   TO CURRENT TIME UNTIL LAUNCH
+ * -------------------------- */
+function numberTransition(id, endPoint, transitionDuration, transitionEase){
+  // Transition numbers from 0 to the final number
+  $({numberCount: $(id).text()}).animate({numberCount: endPoint}, {
+      duration: transitionDuration,
+      easing:transitionEase,
+      step: function() {
+        $(id).text(Math.floor(this.numberCount));
+      },
+      complete: function() {
+        $(id).text(this.numberCount);
+      }
+   }); 
+};
+</script>
+</body>
+</html>
