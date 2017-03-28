@@ -1,0 +1,98 @@
+			#myform label.error {
+			  color: red;
+			  font-weight: 200;
+			  font-size: 12px;
+			  font-family: 'Raleway', sans-serif;
+			}
+body {
+	background-image: url(../img/fondo.jpg);
+	background-size: cover;
+}
+
+.wrapper {
+	/*border: 1px red solid;*/
+	width: 460px;
+	background-color: #f4f1e6;
+	margin: auto;
+	margin-top: 40px;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Montserrat';
+	font-weight: 900;
+	font-size: 2.1em;
+	padding-top:20px;
+	margin-top: 40px;
+}
+
+	h1 a {
+		text-decoration: none;
+			color: #072b3f; 
+	}
+
+		h1 a:hover {
+			color: #a3a87c;
+		}
+
+h3 {
+	text-align: center;
+	font-family: 'Raleway';
+	font-weight: 100;
+	font-size: 1.2em;
+	margin-top: -18px;
+	color: #75736e;
+}
+
+#myform {
+	/*border: 1px red solid;*/
+	width: 400px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+	#myform label {
+		font-family: 'Raleway';
+		font-weight: 200;
+		font-size: 1.05em;
+		color: #072b3f;
+
+
+	}
+
+	input {
+		float: right;
+		color: #cc4350;
+		height: 18px;
+		border:none;
+		font-family: 'Raleway';
+		font-weight: 100;
+		width: 180px;
+		padding: 5px;
+		font-size: 0.8em;
+	}
+
+	input:focus {
+		outline: none;
+	}
+
+	button {
+		font-family: 'Montserrat';
+		font-weight: 900;
+		font-size: 2em;
+		width: 100px;
+		margin: auto;
+		background-color: #FB648F;
+		border: none;
+		color: #f4f1e6;
+		margin-left: 150px;
+		box-shadow: 6px 6px 0px #f4f1e6;
+	}
+
+	button:hover {
+		background-color: #eaa45d;
+	}
+
+	button:focus {
+		outline: none;
+	}

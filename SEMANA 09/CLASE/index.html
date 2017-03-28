@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GB Unofficial Fanclub</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:200,300,600" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+	<h1>
+		<a href="">UN-OFFICIAL<br> GRIZZLY BEAR <br>FAN CLUB</a>
+	</h1>
+	<h3>
+		OFFICIAL SIGN UP FORM
+	</h3>
+	<form id="myform">
+		
+		<label>NAME</label>
+		<input name="name" type="text" placeholder="full name">
+		<br>
+		<br>
+
+		<label>EMAIL</label>
+		<input name="email" type="text" placeholder="edro@example.com">
+		<br>
+		<br>
+
+		<label>USERNAME</label>
+		<input name="username" type="text" placeholder="must contain at least 1 number">
+		<br>
+		<br>
+	
+		<label>CELLPHONE</label>
+		<input name="phone" type="text" id="phone_number">
+		<br>
+		<br>
+	
+		<label>PASSWORD</label>
+		<input name="password" type="password" placeholder="must contain at least one number">
+		<br>
+		<br>
+	
+		<label>CONFIRM PASSWORD</label>
+		<input name="passwordc" type="password" placeholder="must contain at least one number">
+		<br>
+		<br>
+
+		<label>ADDRESS</label>
+		<input name="address" type="text" placeholder="mailing address"> <br>
+		<br>
+		<br>
+
+		<button form="myform" type="submit" class="send">JOIN</button>
+		<br>
+		<br>
+		<br>
+
+	</form>
+</div>
+
+<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.maskedinput.js" type="text/javascript"></script>
+<script src="js/jquery.validate.min.js" type="text/javascript"></script>
+
+<script>
+$().ready(function() {
+  
+  $("#myform").validate({
+    rules: {
+      name: "required",
+      email: "required",
+      username: "required",
+      password: "required",
+      passwordc: "required",
+      phone: "required",
+      address: "required",
+      activity: {
+      	required: true
+      },
+      email: {
+      required: true,
+      email: true
+      },
+    },
+    messages: {
+      name: "<br />Please enter your full name",
+      email: "<br />Please enter your email address",
+      username: "<br />Please choose a username",
+      phone: "<br/>Please enter your cellphone number",
+      password: "<br/>Please choose a password",
+      passwordc: "<br/>Please confirm password",
+      address: "<br/>Please enter your address",
+
+      activity: {
+        required: "<br/>Por favor selecciona una actividad"
+      },
+
+      email: {
+        required: "<br/>Please enter your email address",
+        email: "<br/>Please enter a valid email address"
+      },
+    }
+  });
+});
+
+jQuery(function($){
+   $("#phone_number").mask("(999) 999-9999");
+});
+</script>
+
+</body>
+</html>
