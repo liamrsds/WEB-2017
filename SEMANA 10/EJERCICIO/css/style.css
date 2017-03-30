@@ -1,0 +1,34 @@
+body {
+	background-image: url(../img/plato.jpg);
+	background-size: 100%;
+}
+
+h1 {
+	font-size: 10em;
+	text-align: center;
+	font-family: courier;
+}
+
+  #draggable, #draggable2, #draggable3, #draggable4, #draggable5, #draggable6, #draggable7, #draggable8, #draggable9 { 
+  	width: 250px; 
+  	height: 250px; 
+  	padding: 0.5em; 
+  	border: 0;
+  	background:none;
+  	float: left;
+  	position: absolute;
+  	margin-left: 100px;
+  	
+
+  }
+
+
+  		#draggable6, #draggable7, #draggable8, #draggable9 {
+  			bottom: 0;
+  		}
+
+  #draggable img, #draggable2 img, #draggable3 img, #draggable4 img, #draggable5 img, #draggable6 img, #draggable7 img, #draggable8 img, #draggable9 img{ 
+	width: 100%;
+  }
+
+
