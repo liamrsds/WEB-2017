@@ -271,7 +271,7 @@ p:hover {
 		opacity: 0.5;
 	}
 
-	.container .modal-content .modal-body .col-md-3 p a {
+	.container .modal-content .link {
 		color: #ff98b2;
 		animation-timing-function: ease-in;
 			-moz-transition: color  0.3s;
@@ -280,7 +280,7 @@ p:hover {
 			-o-transition: color 0.3s;
 	}
 
-		.container .modal-content .modal-body  .col-md-3 p a:hover {
+		.container .modal-content .link:hover {
 			color: red;
 			text-decoration: none;
 		}
