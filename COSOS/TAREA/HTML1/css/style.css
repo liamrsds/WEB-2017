@@ -1,6 +1,5 @@
 /***************************GENERAL***************************/
 body {
-	background-color: #000000;
 
 	-webkit-animation: fadein 1s; 
        -moz-animation: fadein 1s; 
@@ -68,19 +67,20 @@ button {
 
 
 .video iframe{
-	width: 1190px;
-	height: 675px;
-	margin: auto;
+	width: 700px;
+	height: 420px;
+	margin: 0 auto;
 	float: none;
-	margin-left: 8%;
-	display: inline-block;
+	margin-left: 400px;
+	margin-top: 100px;
+	/*display: inline-block;*/
 	/*border: 3px red solid;*/
 }
 
 .video a {
 	float: right;
 	color: #ffffff;
-	font-size: 4em;
+	font-size: 2em;
 	margin-right: 20px;
 	margin-bottom: 30px;
 	position: absolute;
@@ -148,6 +148,11 @@ button {
 				.dropdown:hover .dropdown1 {
 				    display: block;
 				}
+
+
+				#home {
+					background-color: #000
+				}
 /***************************BOTONE ROJO***************************/
 #r1 {
 	background-color: #ff583d;
@@ -159,6 +164,34 @@ button {
 
 #r3 {
 	background-color: #ff7d3d;
+}
+
+#heart {
+	background-color: #ff4242;
+}
+
+#girls {
+	background-color: #ff4285;
+}
+
+#moon {
+	background-color: #a015ce;
+}
+
+#eye {
+	background-color: #5a41f3;
+}
+
+#snow {
+	background-color: #1db7ff;
+}
+
+#diam {
+	background-color: #25f9d4;
+}
+
+#money {
+	background-color: #2cec4c;
 }
 
 /***************************BOTONE MORADO***************************/
@@ -260,3 +293,7 @@ button#button9 {
 }	
 
 }
+
+
+
+

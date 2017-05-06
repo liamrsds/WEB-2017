@@ -10,7 +10,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
 	<title>Musiquita</title>
 </head>
-<body>
+<body id="home" class="background">
 	<div class="wrapper">
 		<section class="buttons">
 			<div class="dropdown">
@@ -21,11 +21,7 @@
 						<i class="fa fa-heart" aria-hidden="true"></i>
 					</button>
 				</a>
-				<div class="dropdown1">
-				    <a href="beat.html" id="r1"><i class="fa fa-heartbeat" aria-hidden="true"></i></a>
-				    <a href="alone.html" id="r2"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-				    <a href="small.html" id="r3"><i class="fa fa-mars-double" aria-hidden="true"></i></a>
-  				</div>
+			
 			</div>
 
 <!-- *******************GIRLS********************* -->
@@ -44,11 +40,6 @@
 						<i class="fa fa-moon-o" aria-hidden="true"></i>
 					</button>
 				</a>
-				<div class="dropdown1">
-				    <a href="star.html" id="m1"><i class="fa fa-star" aria-hidden="true"></i></a>
-				    <a href="index.html" id="m2"><i class="fa fa-cloud" aria-hidden="true"></i></a>
-				    <a href="sun.html" id="m3"><i class="fa fa-sun-o" aria-hidden="true"></i></a>
-  				</div>
 			</div>
 
 <!-- *******************EYE********************* -->
@@ -94,9 +85,7 @@
 							<i class="fa fa-leaf" aria-hidden="true"></i>
 					</button>
 				</a>
-				<div class="dropdown1">
-				    <a href="index.html" id="h1"><i class="fa fa-bug" aria-hidden="true"></i></a> 
-  				</div>
+				
 			</div>
 			
 <!-- *******************RAYO********************* -->
@@ -114,5 +103,49 @@
 			</h1>
 		</section>
 	</div>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+	
+	$colormap: (
+    one:   #f55683,
+    two:   #6d5bf5,
+    three: #2a84ff,
+    four:  #ffe32a,
+);
+
+
+
+/// Map deep get
+/// @author Hugo Giraudel
+/// @access public
+/// @param {Map} $map - Map
+/// @param {Arglist} $keys - Key chain
+/// @return {*} - Desired value
+@function map-reach($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+ 
+@keyframes animation-colors {
+  0% {
+    background-color: map-reach($colormap, one); 
+  }
+  25% {
+    background-color: map-reach($colormap, two); 
+  }
+  50% {
+    background-color: map-reach($colormap, three);
+  }
+  75% {
+    background-color: map-reach($colormap, four);
+  }
+  100% {
+    background-color: map-reach($colormap, one);
+  }
+}
+
+</script>	
 </body>
 </html>
