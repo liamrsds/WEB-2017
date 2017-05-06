@@ -1,0 +1,115 @@
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #404040;
+  height: 100%;
+}
+
+.titulo {
+  width: 700px;
+  margin: auto;
+  margin-top: center;
+}
+
+  .titulo h1 {
+    font-size: 4.4em;
+    text-align: center;
+    color: #fff;
+    font-family: 'Josefin Slab';
+    font-weight: 100;
+    margin-top: 60px;
+  }
+
+.status-box {
+  border-radius: 0;
+  border:none;
+  width: 500px;
+  margin: auto;
+  margin-top: 30px;
+  font-family: 'Raleway';
+  font-weight: 100;
+  font-size: 1.4em;
+  padding: 15px 20px;
+  opacity: 0.4;
+
+          animation-timing-function: ease-in;
+          -moz-transition: opacity  0.4s;
+          -webkit-transition: opacity  0.4s;
+          -ms-transition: opacity  0.4s;
+          -o-transition: opacity 0.4s;
+}
+
+  .status-box:hover {
+    opacity: 0.7;
+  }
+
+.btn-default.disabled {
+  color: #282561;
+  border:none;
+}
+
+.btn-default {
+  border-radius: 100%;
+  border: 0;
+  font-size: 2.5em;
+  padding: 0px 19px;
+  font-family: 'Raleway';
+  font-weight: 100;
+  background-color: #F6921E;
+  margin-right: -10px;
+  color: #fff;
+
+          animation-timing-function: ease-in;
+          -moz-transition: background-color  0.4s;
+          -webkit-transition: background-color  0.4s;
+          -ms-transition: background-color  0.4s;
+          -o-transition: background-color 0.4s;
+}
+
+  .btn-default:hover {
+    background-color: #AF2234;
+    color: #fff;
+  }
+
+.container {
+  width: 520px;
+  margin-top: 20px;
+}
+
+.button-group {
+  margin-bottom: 20px;
+}
+
+.counter {
+  display: inline;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+  font-family: 'Josefin Slab';
+  font-weight: 100;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.posts {
+  clear: both;
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+}
+
+.posts li {
+  background-color: #fff;
+  opacity: 0.6;
+  font-family: 'Raleway';
+  font-weight: 100;
+  font-size: 1.4em;
+  width: 500px;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  min-height: 42px;
+}
