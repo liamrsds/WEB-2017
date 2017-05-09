@@ -1,0 +1,205 @@
+html {
+  background-color: #ffd00b;
+}
+
+body {
+  background: linear-gradient(#ffd00b, #ff9d00);
+  background-size: cover;
+  height: 100%;
+  background-repeat: repeat-y;
+}
+
+.container-fluid {
+  /*border: 1px red solid;*/
+}
+
+header {
+ /* border: 1px cyan solid;*/
+  width: 700px;
+  margin: auto;
+  margin-top: 40px;
+  /*margin-bottom: 180px;*/
+}
+
+.logo {
+  width: 300px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+header img {
+  width: 300px;
+  margin: auto;
+/*  border: 1px orange solid;*/
+}
+
+
+
+header h3 {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  width: 370px;
+  margin: auto;
+  font-size: 1.3em;
+  text-align: center;
+  margin-top: 30px;
+  color: #fe5d2d;
+}
+
+.hsContent h2 {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  color: #fff;
+  font-size: 1.7em;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.store {
+  /*border: 1px pink solid;*/
+  width: 380px;
+  margin:auto;
+  margin-top: 20px;
+}
+
+
+ header .store a img {
+  border-radius: 5px;
+  width: 140px;
+  cursor: pointer;
+
+  animation-timing-function: ease-in;
+        -moz-transition: box-shadow  0.5s;
+        -webkit-transition: box-shadow  0.5s;
+        -ms-transition: box-shadow  0.5s;
+        -o-transition: box-shadow 0.5s;
+}
+
+  #link:hover {
+   box-shadow: 5px 5px 20px #f46800; 
+  }
+
+header .left img {
+  margin-right: 90px;
+}
+
+.arrow {
+  width: 100px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.arrow img{
+    width: 100px;
+    margin:auto;
+}
+
+.middle {
+  width: 320px;
+  margin:auto;
+  margin-bottom: 140px;
+}
+
+.iphone1 img {
+  width: 390px;
+  display: inline-block;
+  margin-right: 400px;
+}
+
+.iphone1 h3 {
+  font-family: 'Montserrat';
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 300;
+  width: 240px;
+  display: inline-block;
+  float: left;
+  margin-top: 300px;
+  margin-left: 350px;
+}
+
+
+.iphone2 img {
+  width: 390px;
+  display: inline-block;
+  margin-left: 270px;
+}
+
+.iphone2 h3 {
+  font-family: 'Montserrat';
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 300;
+  width: 240px;
+  display: inline-block;
+  float: right;
+  margin-top: 300px;
+  margin-right: 450px;
+}
+
+.iphone3 img {
+  width: 390px;
+  display: inline-block;
+  margin-right: 290px;
+}
+
+.iphone3 h3 {
+  font-family: 'Montserrat';
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 300;
+  width: 240px;
+  display: inline-block;
+  float: left;
+  margin-top: 300px;
+  margin-left: 230px;
+}
+
+#slide-5 .bcg3 {
+  background: linear-gradient(#ff9d00, #ffd00b);
+}
+
+#slide5 h2 {
+  width: 450px;
+  line-height: 30px;
+  margin:auto;
+}
+
+#slide5 h3 {
+  letter-spacing: 20px;
+}
+
+#slide5 a {
+  font-size: 2.5em;
+  color: #fff;
+  text-decoration: none;
+
+  animation-timing-function: ease-in;
+        -moz-transition: color 0.5s;
+        -webkit-transition: color 0.5s;
+        -ms-transition: color 0.5s;
+        -o-transition:color 0.5s;
+}
+
+  #slide5 a:hover {
+    color: #fe5d2d;
+  }
+
+  #slide5 footer {
+    clear: both;
+    width: 100%;
+    vertical-align: bottom;
+    bottom: 0;
+    position: absolute;
+  /*  border: 1px red solid;*/
+    margin-left: -115px;
+    margin-bottom: 15px
+  }
+
+  #slide5 p {
+    color: #fff;
+    font-size: 1.1em;
+    font-family: 'Montserrat';
+    text-align: center;
+
+  }
