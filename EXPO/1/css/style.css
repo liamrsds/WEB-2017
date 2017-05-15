@@ -61,7 +61,7 @@
 
 
 	.row-1 .col-md-4 {
-		height: 600px;
+		height: 930px;
 	}
 
 .col-md-5 {
@@ -72,7 +72,7 @@
 
 .col-md-2 {
 	/*border: 1px orange solid;*/
-	height: 750px;
+	height: 1080px;
 	margin: 0;
 	padding: 0;
 	width: 19.99%;
@@ -85,7 +85,7 @@
 }
 
 	.row-3 .col-md-3 {
-		height: 550px;
+		height: 880px;
 	}
 
 a {
@@ -170,15 +170,15 @@ div {
 		}
 
 	.medio a {
-		line-height: 700px;
+		line-height: 1080px;
 	}
 
 	.left a {
-		line-height: 400px;
+		line-height: 780px;
 	}
 
 	.right a {
-		line-height: 700px;
+		line-height: 1080px;
 	}
 
 .titulo {
